@@ -11,6 +11,7 @@ class CSVParser:
         self.hotel_list=[]
         self.start_reading()
 
+
     def start_reading(self):
         with open(self.input_file_path, 'r') as read_obj:
             csv_reader = reader(read_obj)

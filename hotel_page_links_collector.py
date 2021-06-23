@@ -10,9 +10,9 @@ class HotelPageLinksCollector:
         self.driver = driver
 
 
-    def get_url_hotel(self,hotel_info):
+    def get_hotels(self, hotel_info):
          search = self.driver.find_element_by_xpath(self.INPUT_SEARCH_HOTEL_XPATH)
          search.send_keys(hotel_info)
          search_button=self.driver.find_element_by_xpath(self.BUTTON_SEARCH_XPATH)
          search_button.click()
-         return self.driver.current_url
+
