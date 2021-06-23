@@ -1,8 +1,10 @@
 
-class InputHotelStruct:
+class OutputHotelStruct:
 
-    def __init__(self,links_list):
-        self.links_list=links_list
+    def __init__(self,hotel_input_row,hotel_collecting_info):
+        self.links_list=hotel_collecting_info
+        self.hotel_input_row=hotel_input_row
+
 
 
     def __repr__(self):
